@@ -1,0 +1,34 @@
+#!/bin/bash
+
+echo "Initializing Podman "
+
+podman machine start
+
+echo "Creating image"
+
+podman build -f Dockerfile -t image_lab_2:latest
+
+echo "Push image to DockerHub"
+
+podman push  image_lab_2:final docker.io/23ron/image_lab_2:latest
+
+echo "Creating EKS mudule in AWS"
+
+echo "Provisioning Infrastructure in AWS by Terraform"
+
+terraform init
+terraform plan
+
+
+terraform apply
+	
+aws eks --region us-east-2 update-kubeconfig --name education-eks-AxKI5Ojy
+
+echo "Check nodes"
+kubectl get nodes
+
+kubectl run --image 23ron/image_lab_2:latest lab2 --port 5000
+
+kubectl port-forward lab2 5000:5000
+
+curl http://12.7.0.0.1:5000/store
