@@ -11,6 +11,9 @@ Clone this repository git clone https://github.com/rmirandaa/lab2.git
 
 Configure the AWS CLI & KeyPairs.
 
+Make the script executable 
+chmod +x lab2_ron.sh
+
 Run the script ./lab2_ron
 
 ## How to use
