@@ -7,21 +7,15 @@ In this repository is the necessary code to implement the deployment of a rest-a
 
 ## Intallation
 
-Clone this repository
+Clone this repository git clone https://github.com/rmirandaa/lab2.git
 
-git clone https://github.com/rmirandaa/lab2.git
+Configure the AWS CLI & KeyPairs.
 
-Configure
-
-AWS CLI & KeyPairs.
-
-Run 
-
-script ./lab2_ron
+Run the script ./lab2_ron
 
 ## How to use
 
 When the script finish all configurations open http://127.0.0.1:5000/store in your browser , you should see the following
 
-![json](/Users/ronmirandaarce/Documents/GitHub/sre-test/terraform_lab_2/output)
+![json](output)
 
