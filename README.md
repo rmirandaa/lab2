@@ -18,7 +18,7 @@ Run the script ./lab2_ron
 
 ## How to use
 
-When the script finish all configurations open http://127.0.0.1:5000/store in your browser , you should see the following
+When the script finish all configurations open http://localhost:5000/store in your browser , you should see the following
 
 ![json](output)
 
