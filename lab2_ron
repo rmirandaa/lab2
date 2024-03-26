@@ -29,6 +29,8 @@ kubectl get nodes
 
 kubectl run --image 23ron/image_lab_2:latest lab2 --port 5000
 
+sleep 200
+
 kubectl port-forward lab2 5000:5000
 
-curl http://12.7.0.0.1:5000/store
+#curl http://12.7.0.0.1:5000/store
