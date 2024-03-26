@@ -20,5 +20,5 @@ Run the script ./lab2_ron
 
 When the script finish all configurations open http://localhost:5000/store in your browser , you should see the following
 
-![json](output)
+![json](https://github.com/rmirandaa/lab2/blob/main/output.png)
 
