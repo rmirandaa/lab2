@@ -35,8 +35,8 @@ resource "aws_instance" "my_iac_lab2" {
 
   connection {
     type        = "ssh"
-    user        = "ec2-user"  # Specify the SSH user for your AMI (ec2-user for Amazon Linux)
-    private_key = file("/Users/ronmirandaarce/Documents/awskey.pem")  # Specify the path to your private key
+    user        = "ec2-user"  
+    private_key = file("/Users/ronmirandaarce/Documents/awskey.pem")  
     host        = aws_instance.my_iac_lab2.public_ip
   }
 
