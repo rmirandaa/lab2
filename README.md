@@ -1,5 +1,7 @@
-# lab2
+# Lab2
 SRE ACADEMY LAB 2_RONALD
+
+## Description
 
 In this repository is the necessary code to implement the deployment of a rest-api container  in AWS usig an EC2 instance or an ElasticKubernetes Cluster.
 
@@ -7,11 +9,15 @@ In this repository is the necessary code to implement the deployment of a rest-a
 
 Clone this repository
 
-git clone
+git clone https://github.com/rmirandaa/lab2.git
 
-Configure the AWS CLI & KeyPairs.
+Configure
 
-Run the script ./lab2_ron
+AWS CLI & KeyPairs.
+
+Run 
+
+script ./lab2_ron
 
 ## How to use
 
