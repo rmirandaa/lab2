@@ -7,18 +7,11 @@ terraform {
   }
 }
 
-#resource "null_resource" "build_podman_image" {
-  #provisioner "local-exec" {
-   # command = "podman build -f Dockerfile -t my_image"
-  #  #working_dir = "${path.module}/Users/ronmirandaarce/Documents/GitHub/sre-test/terraform_lab_2/Dockerfile"
- # }
-#}
-
 provider "aws" {
   # Configuration options
   region = "us-east-2"
 }
-
+                                          # Deploy in an EC2 instance 
 resource "aws_instance" "my_iac_lab2" {
     ami= "ami-0d77c9d87c7e619f9"
     instance_type = "t2.micro"
@@ -50,7 +43,7 @@ resource "aws_instance" "my_iac_lab2" {
     ]
   }
 }
-
+                                              # EKS Cluster!
 data "aws_availability_zones" "available" {
   filter {
     name   = "opt-in-status"
