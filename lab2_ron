@@ -22,7 +22,7 @@ terraform plan
 
 terraform apply
 	
-aws eks --region us-east-2 update-kubeconfig --name education-eks-AxKI5Ojy
+aws eks --region us-east-2 update-kubeconfig --name eks-AxKI5Ojy
 
 echo "Check nodes"
 kubectl get nodes
