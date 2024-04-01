@@ -9,7 +9,7 @@ In this repository is the necessary code to implement the deployment of a rest-a
 
 Clone this repository git clone https://github.com/rmirandaa/lab2.git
 
-Configure the AWS CLI & KeyPairs.
+Configure the AWS CLI.
 
 Make the script executable 
 chmod +x lab2_ron.sh
